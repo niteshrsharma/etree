@@ -1,0 +1,79 @@
+.nav{
+    height: 4em;
+    border-radius: 20px;
+    position: absolute;
+    top: 2em;
+    z-index: 100;
+    top: 3vh;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(46, 71, 71);
+}
+
+.options{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.options div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+}
+.logo{
+    height: 3em;
+    margin-left:10px ;
+}
+
+.options button{
+    background-color: rgb(62, 131, 209);
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: -10px 10px 20px 0px rgba(0,34,102,1);
+}
+
+.options button:active{
+    transform: scale(0.8);
+}
+
+@media screen and (max-width: 1236px) {
+    .options{
+        flex-direction: column;
+        background-color: rgb(46, 71, 71);
+        position: absolute;
+        right: -20px;
+        top: 3em;
+        height: fit-content;
+        padding: 20px;
+        border-radius: 20px;
+        align-items: baseline;
+        box-shadow: -20px 20px 25px 0px rgba(216, 224, 240, 0.555);
+    }
+}
